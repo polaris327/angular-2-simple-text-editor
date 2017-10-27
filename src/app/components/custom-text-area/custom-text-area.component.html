@@ -1,0 +1,15 @@
+<div class="custom-text-area">
+  <div class="container" #container>
+    <div class="backdrop" #backdrop>
+      <div class="hooks">
+        <div class="highlights" #highlights></div>
+        <div class="bolds" #bolds></div>
+      </div>
+    </div>
+    <textarea appCapitilizeWords [words]="capitalWords"
+      [(ngModel)] = "value"
+      (input)="onTextChange()"
+      (scroll)="onScroll()" #textarea>
+    </textarea>
+  </div>
+</div>

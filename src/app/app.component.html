@@ -1,0 +1,19 @@
+<h1> Signals </h1>
+
+<div>
+  <div *ngIf = "OKMessage" class="success"> {{OKMessage}} </div>
+  <div *ngIf = "ErrorMessage" class="error"> {{ErrorMessage}} </div>
+</div>
+<div class="text-center">
+    <button type= "button" [disabled]="waiting" (click) = "onGet()" >Get server Value</button>
+</div>
+<form (ngSubmit)="onSave()">
+  <div>
+    <app-custom-text-area [(ngModel)]="text" name="s"
+      [capitalWords]="capitalWords" [boldWords]="boldWords" [highlightedWords]="highlightedWords">
+    </app-custom-text-area>
+  </div>
+  <div class="text-center">
+    <button type= "submit" [disabled]="waiting">Save</button>
+  </div>
+</form>

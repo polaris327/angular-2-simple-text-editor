@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+.success {
+  font-size: 140%;
+  font-weight: bold;
+  color: green;
+}
+
+.error {
+  font-size: 140%;
+  font-weight: bold;
+  color: red;
+}
+
+.working {
+  font-size: 140%;
+  font-weight: bold;
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+  padding: 15px;
+}
